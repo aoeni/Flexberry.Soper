@@ -1,0 +1,67 @@
+<h3 class="ui header">{{t "forms.i-i-s-soper-пассажир-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.фИО
+      class=(if (v-get validationModel "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-soper-пассажир-e.фИО-caption")
+      data-test-i-i-s-soper-пассажир-e-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "фИО" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.кодБрони.код
+      class=(if (v-get validationModel.кодБрони "код" "isInvalid") "error")
+      label=(t "forms.i-i-s-soper-пассажир-e.кодБрони.код-caption")
+      data-test-i-i-s-soper-пассажир-e-кодБрони-код=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.кодБрони "код" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-soper-пассажир-e-местоНаРейс-класс="true">
+    <label>{{t "forms.i-i-s-soper-пассажир-e.местоНаРейс.класс-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-soper-класс-билета")
+      value=model.местоНаРейс.класс
+      class=(if (v-get validationModel.местоНаРейс "класс" "isInvalid") "error")
+      readonly=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.местоНаРейс "класс" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.местоНаРейс.место
+      class=(if (v-get validationModel.местоНаРейс "место" "isInvalid") "error")
+      label=(t "forms.i-i-s-soper-пассажир-e.местоНаРейс.место-caption")
+      data-test-i-i-s-soper-пассажир-e-местоНаРейс-место=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.местоНаРейс "место" "message")}}
+  </div>
+</form>

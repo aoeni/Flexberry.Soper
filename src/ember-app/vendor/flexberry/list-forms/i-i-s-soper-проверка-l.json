@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-soper-проверка-e",
+  "editForm": "i-i-s-soper-проверка-e",
+  "external": false,
+  "caption": "Проверка",
+  "name": "IISSoperПроверкаL",
+  "className": "ПроверкаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-проверка",
+      "modelProjection": "ПроверкаL"
+    }
+  ]
+}

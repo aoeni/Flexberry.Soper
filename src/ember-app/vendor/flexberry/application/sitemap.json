@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "Soper",
+  "applicationTitle": "Soper",
+  "items": [
+    {
+      "link": null,
+      "menuName": "soper",
+      "caption": "Soper",
+      "title": "Soper",
+      "children": [
+        {
+          "link": "i-i-s-soper-код-брони-l",
+          "menuName": null,
+          "caption": "Код бронирования",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-soper-место-на-рейс-l",
+          "menuName": null,
+          "caption": "Место на рейс",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-soper-проверка-l",
+          "menuName": null,
+          "caption": "Проверка",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-soper-посад-талон-l",
+          "menuName": null,
+          "caption": "Посадочный талон",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-soper-пассажир-l",
+          "menuName": null,
+          "caption": "Пассажир",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-soper-опертор-l",
+          "menuName": null,
+          "caption": "Опертор",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-soper-терминал-l",
+          "menuName": null,
+          "caption": "Терминал",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-soper-рейс-l",
+          "menuName": null,
+          "caption": "Рейс",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

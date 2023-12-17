@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-soper-терминал-e",
+  "editForm": "i-i-s-soper-терминал-e",
+  "external": false,
+  "caption": "Терминал",
+  "name": "IISSoperТерминалL",
+  "className": "ТерминалL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-терминал",
+      "modelProjection": "ТерминалL"
+    }
+  ]
+}

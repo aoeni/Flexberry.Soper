@@ -1,0 +1,114 @@
+<h3 class="ui header">{{t "forms.i-i-s-soper-проверка-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-soper-проверка-e.опертор-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.опертор
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="опертор"
+      projection="ОперторL"
+      title=(t "forms.i-i-s-soper-проверка-e.опертор-caption")
+      readonly=readonly
+      componentName="оперторLookup"
+      class=(if (v-get validationModel "опертор" "isInvalid") "error")
+      data-test-i-i-s-soper-проверка-e-опертор=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "опертор" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.опертор.iD
+      class=(if (v-get validationModel.опертор "iD" "isInvalid") "error")
+      label=(t "forms.i-i-s-soper-проверка-e.опертор.iD-caption")
+      data-test-i-i-s-soper-проверка-e-опертор-iD=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.опертор "iD" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.опертор.кодДоступа
+      class=(if (v-get validationModel.опертор "кодДоступа" "isInvalid") "error")
+      label=(t "forms.i-i-s-soper-проверка-e.опертор.кодДоступа-caption")
+      data-test-i-i-s-soper-проверка-e-опертор-кодДоступа=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.опертор "кодДоступа" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-soper-проверка-e.терминал-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.терминал
+      displayAttributeName="номер"
+      autocomplete=true
+      relationName="терминал"
+      projection="ТерминалL"
+      title=(t "forms.i-i-s-soper-проверка-e.терминал-caption")
+      readonly=readonly
+      componentName="терминалLookup"
+      class=(if (v-get validationModel "терминал" "isInvalid") "error")
+      data-test-i-i-s-soper-проверка-e-терминал=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "терминал" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-soper-проверка-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-soper-проверка-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.время
+      class=(if (v-get validationModel "время" "isInvalid") "error")
+      label=(t "forms.i-i-s-soper-проверка-e.время-caption")
+      data-test-i-i-s-soper-проверка-e-время=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "время" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-soper-проверка-e.лентаПечати-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.лентаПечати
+      class=(if (v-get validationModel "лентаПечати" "isInvalid") "error")
+      data-test-i-i-s-soper-проверка-e-лентаПечати=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "лентаПечати" "message")}}
+  </div>
+</form>

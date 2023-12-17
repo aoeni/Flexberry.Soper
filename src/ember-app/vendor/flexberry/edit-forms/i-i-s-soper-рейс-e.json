@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Рейс",
+  "name": "IISSoperРейсE",
+  "className": "РейсE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-рейс",
+      "modelProjection": "РейсE"
+    }
+  ]
+}

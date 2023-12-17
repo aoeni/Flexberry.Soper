@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Опертор",
+      "projection": "ОперторL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Терминал",
+      "projection": "ТерминалL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Проверка",
+  "name": "IISSoperПроверкаE",
+  "className": "ПроверкаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-проверка",
+      "modelProjection": "ПроверкаE"
+    }
+  ]
+}

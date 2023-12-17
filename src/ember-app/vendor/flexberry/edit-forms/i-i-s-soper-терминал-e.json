@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Терминал",
+  "name": "IISSoperТерминалE",
+  "className": "ТерминалE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-терминал",
+      "modelProjection": "ТерминалE"
+    }
+  ]
+}

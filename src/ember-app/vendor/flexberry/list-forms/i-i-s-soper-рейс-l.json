@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-soper-рейс-e",
+  "editForm": "i-i-s-soper-рейс-e",
+  "external": false,
+  "caption": "Рейс",
+  "name": "IISSoperРейсL",
+  "className": "РейсL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-рейс",
+      "modelProjection": "РейсL"
+    }
+  ]
+}

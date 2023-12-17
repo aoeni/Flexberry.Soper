@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-soper-посад-талон-e",
+  "editForm": "i-i-s-soper-посад-талон-e",
+  "external": false,
+  "caption": "Посадочный талон",
+  "name": "IISSoperПосадТалонL",
+  "className": "ПосадТалонL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-посад-талон",
+      "modelProjection": "ПосадТалонL"
+    }
+  ]
+}

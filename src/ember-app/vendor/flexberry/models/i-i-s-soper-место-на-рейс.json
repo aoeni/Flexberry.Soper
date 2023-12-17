@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISSoperМестоНаРейс",
+  "modelName": "i-i-s-soper-место-на-рейс",
+  "className": "МестоНаРейс",
+  "nameSpace": "IIS.Soper",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "класс",
+      "type": "i-i-s-soper-класс-билета",
+      "flexberryType": "КлассБилета",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "место",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "МестоНаРейсE",
+      "modelName": "i-i-s-soper-место-на-рейс",
+      "attrs": [
+        {
+          "name": "место",
+          "caption": "Место",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "класс",
+          "caption": "Класс",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "МестоНаРейсL",
+      "modelName": "i-i-s-soper-место-на-рейс",
+      "attrs": [
+        {
+          "name": "место",
+          "caption": "Место",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "класс",
+          "caption": "Класс",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

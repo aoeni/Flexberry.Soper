@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Опертор",
+  "name": "IISSoperОперторE",
+  "className": "ОперторE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-опертор",
+      "modelProjection": "ОперторE"
+    }
+  ]
+}

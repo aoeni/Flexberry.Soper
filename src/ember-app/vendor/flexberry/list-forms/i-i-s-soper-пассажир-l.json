@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-soper-пассажир-e",
+  "editForm": "i-i-s-soper-пассажир-e",
+  "external": false,
+  "caption": "Пассажир",
+  "name": "IISSoperПассажирL",
+  "className": "ПассажирL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-пассажир",
+      "modelProjection": "ПассажирL"
+    }
+  ]
+}

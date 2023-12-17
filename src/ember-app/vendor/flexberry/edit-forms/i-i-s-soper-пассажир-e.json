@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Пассажир",
+  "name": "IISSoperПассажирE",
+  "className": "ПассажирE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-soper-пассажир",
+      "modelProjection": "ПассажирE"
+    }
+  ]
+}
